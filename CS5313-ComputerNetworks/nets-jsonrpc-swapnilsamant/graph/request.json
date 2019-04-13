@@ -1,0 +1,29 @@
+{
+	"id":1,
+	"jsonrpc":"2.0",
+	"method":"server_increment",
+	"params":[{
+					"1234":
+					{
+						"name": "root",
+						"children":["3456","3456","5678"],
+						"level":0,
+						"value":0
+					},
+					"3456":
+					{
+						"name": "leaf1",
+						"children":[],
+						"level":1,
+						"value":0
+					},
+					"5678":
+					{
+						"name": "leaf2",
+						"children":[],
+						"level":1,
+						"value":0
+					}
+				}
+			]
+}
