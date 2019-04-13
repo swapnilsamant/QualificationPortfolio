@@ -1,0 +1,11 @@
+["hello world"
+a=10
+b=5
+if a<6
+{
+    "less"
+}
+else
+{
+    "more"
+}]
